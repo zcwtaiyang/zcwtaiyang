@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+	/* 设置最外层div */
+	.max{
+		/* 设置最外层宽度*/
+		width: 800px;
+		/* 设置自适应居中 */
+		margin: auto;
+	}
+	
+	/* 设置网名，签名，等级，手机标识div */
+	.top-div-one{
+		width: 800px;/* 设置div宽度 */
+		height: 100px;/* 设置此div高度 */
+		background-color: green;/* 设置此div背景颜色 */
+	}
+	
+	/* 显示头像，黄砖，个人空间导航div */
+	.top-div-two{
+		width: 800px;/* 设置div宽度 */
+		height: 100px;/* 设置此div高度 */
+		background-color: red;/* 设置此div背景颜色 */
+		margin-top: 20px;/* 设置此div距离上一个div的边距 */
+	}
+	
+	/* 显示空间详细内容 */
+	.center-div{
+		width: 800px;/* 设置div宽度 */
+		/* margin-top: 20px; *//* 设置此div距离上一个div的边距 */
+	}
+	
+	/* 展示导航 游戏 广告等 */
+	.center-div-left{
+		width: 180px;
+		height: 800px;
+		/* background-color: aqua; */
+		float: left;/* 设置div并行 */
+		margin-top: 20px;
+	}
+	
+	/* 展示发送动态文本框 以及动态展示区域 */
+	.center-div-center{
+		width: 400px;
+		height: 1300px;
+		float: left;
+		margin-left: 20px;
+		/* background-color: chocolate; */
+		margin-top: 20px;
+	}
+	
+	/* 展示发送动态文本框 以及动态展示区域 */
+	.center-div-right{
+		width: 180px;
+		height: 800px;
+		float: left;
+		margin-left: 20px;
+		/* background-color: cornflowerblue; */
+		margin-top: 20px;
+	}
+	
+	/* 展示导航 游戏 广告等 开始 */
+	.center-div-left-top{
+		height: 200px;
+		background-color: yellow;
+		margin-bottom: 20px;
+	}
+	
+	.center-div-left-center{
+		height: 280px;
+		background-color: deeppink;
+		margin-bottom: 20px;
+	}
+	
+	.center-div-left-bottom{
+		height: 280px;
+		background-color: darkorchid;
+	}
+	/* 展示导航 游戏 广告等 结束 */
+	
+	/* 展示发送动态文本框 以及动态展示区域 开始 */
+	.center-div-center-textarea{
+		height: 50px;
+		background-color: #008000;
+		margin-bottom: 20px;
+	}
+	
+	.center-div-center-dt{
+		height: 200px;
+		background-color: pink;
+		margin-bottom: 20px;
+	}
+	/* 展示发送动态文本框 以及动态展示区域 结束 */
+	
+	/* 展示发送动态文本框 以及动态展示区域 开始 */
+	.center-div-right-qd{
+		height: 50px;
+		background-color: #FFFF00;
+		margin-bottom: 20px;
+	}
+	
+	.center-div-right-gg{
+		height: 250px;
+		background-color: pink;
+		margin-bottom: 20px;
+	}
+	.center-div-right-see{
+		height: 250px;
+		background-color: blueviolet;
+		margin-bottom: 20px;
+	}
+	
+	.center-div-right-gift{
+		height: 250px;
+		background-color: darkturquoise;
+		margin-bottom: 20px;
+	}
+	
+	/* 设置背景图片 */
+	#web_bg{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		min-width: 1000px;
+		z-index: -10;
+		zoom: 1;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center 0;
+	}
+	</style>
+	<body>
+		<!--背景图片-->
+		<div id="web_bg" style="background-image: url(img/bj.jpg);"></div>
+		
+		<!--最外侧div-->
+		<div class="max">
+			<!--网名,签名,等级,手机标识div-->
+			<div class="top-div-one">
+				网名,签名,等级,手机标识div
+			</div>
+			<!--显示头像,黄钻,个人空间导航-->
+			<div class="top-div-two">
+				显示头像,黄钻,个人空间导航
+			</div>
+			<!--显示空间详细内容-->
+			<div class="center-div">
+				<!--展示导航 游戏 广告等 -->
+				<div class="center-div-left">
+					<div class="center-div-left-top">导航</div>
+					<div class="center-div-left-center">游戏</div>
+					<div class="center-div-left-bottom">广告</div>
+				</div>
+				<!--展示发送动态文本框 以及动态展示区域 -->
+				<div class="center-div-center">
+					<div class="center-div-center-textarea">文本域</div>
+					<div class="center-div-center-dt">动态1</div>
+					<div class="center-div-center-dt">动态2</div>
+					<div class="center-div-center-dt">动态3</div>
+					<div class="center-div-center-dt">动态4</div>
+					<div class="center-div-center-dt">动态5</div>
+				</div>
+				<!--展示发送动态文本框 以及动态展示区域 -->
+				<div class="center-div-right">
+					<div class="center-div-right-qd">签到</div>
+					<div class="center-div-right-gg">广告</div>
+					<div class="center-div-right-see">谁看过我</div>
+					<div class="center-div-right-gift">礼物</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
